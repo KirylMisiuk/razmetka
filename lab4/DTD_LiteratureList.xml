@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE LiteratureList
+[
+<!ATTLIST ShelfNumder id CDATA "#REQUIRED">
+<!ELEMENT ShelfNumder (BookTitle, BookAuthor, BookGenre, NumberOfPages, NumberOfCopies)>
+<!ELEMENT BookTitle (#PCDATA)>
+<!ELEMENT LiteratureList (ShelfNumder)>
+<!ELEMENT BookAuthor (#PCDATA)>
+<!ELEMENT BookGenre (#PCDATA)>
+<!ELEMENT NumberOfPages (#PCDATA)>
+<!ELEMENT NumberOfCopies (#PCDATA)>
+]>
+
+
+<LiteratureList>
+<ShelfNumder id ="1">
+<BookTitle>Crime and Punishment</BookTitle>
+<BookAuthor>F.M.Dostoevsky</BookAuthor>
+<BookGenre>Philosophical novel</BookGenre>
+<NumberOfPages>574</NumberOfPages>
+<NumberOfCopies>1</NumberOfCopies>
+</ShelfNumder>
+
+<ShelfNumder id="1">
+<BookTitle>Dead Souls</BookTitle>
+<BookAuthor>N.V.Gogol</BookAuthor>
+<BookGenre>Satire</BookGenre>
+<NumberOfPages>352</NumberOfPages>
+<NumberOfCopies>3</NumberOfCopies>
+</ShelfNumder>
+
+<ShelfNumder id="1">
+<BookTitle>A little prince</BookTitle>
+<BookAuthor>Antoine de Saint-Exupery</BookAuthor>
+<BookGenre>Fairy tale</BookGenre>
+<NumberOfPages>82</NumberOfPages>
+<NumberOfCopies>1</NumberOfCopies>
+</ShelfNumder>
+
+<ShelfNumder id="2">
+<BookTitle>War and Peace</BookTitle>
+<BookAuthor>L.N.Tolstoy</BookAuthor>
+<BookGenre>Novel</BookGenre>
+<NumberOfPages>1225</NumberOfPages>
+<NumberOfCopies>5</NumberOfCopies>
+</ShelfNumder>
+
+<ShelfNumder id="2">
+<BookTitle>Anna Karenina</BookTitle>
+<BookAuthor>L.N.Tolstoy</BookAuthor>
+<BookGenre>Realism</BookGenre>
+<NumberOfPages>864</NumberOfPages>
+<NumberOfCopies>1</NumberOfCopies>
+</ShelfNumder>
+
+<ShelfNumder id="2">
+<BookTitle>The Master and Margarita</BookTitle>
+<BookAuthor>M.A.Bulgakov</BookAuthor>
+<BookGenre>Fantastic</BookGenre>
+<NumberOfPages>310</NumberOfPages>
+<NumberOfCopies>10</NumberOfCopies>
+</ShelfNumder>
+
+<ShelfNumder id="3">
+<BookTitle>Hero of our time</BookTitle>
+<BookAuthor>M.Yu.Lermontov</BookAuthor>
+<BookGenre>Psychological realism</BookGenre>
+<NumberOfPages>288</NumberOfPages>
+<NumberOfCopies>1</NumberOfCopies>
+</ShelfNumder>
+
+<ShelfNumder id="3">
+<BookTitle>Fathers and Sons</BookTitle>
+<BookAuthor>I.S.Turgenev</BookAuthor>
+<BookGenre>Love story</BookGenre>
+<NumberOfPages>191</NumberOfPages>
+<NumberOfCopies>8</NumberOfCopies>
+</ShelfNumder>
+
+<ShelfNumder id="3">
+<BookTitle>Captain's daughter</BookTitle>
+<BookAuthor>A.S.Pushkin</BookAuthor>
+<BookGenre>Historical genre</BookGenre>
+<NumberOfPages>384</NumberOfPages>
+<NumberOfCopies>3</NumberOfCopies>
+</ShelfNumder>
+</LiteratureList>

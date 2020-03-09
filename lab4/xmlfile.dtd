@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/xmlfile.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE disklist SYSTEM "xmlfile.dtd">
+
+    <disklist>
+    ...
+    </disklist>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT disklist (disk)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT disk (file|name_disk)*>
+<!ATTLIST disk
+    category CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT file (name_disk|title|date_of_creation|size|kolichestvo|attribute)*>
+<!ATTLIST file
+    open CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT name_disk (#PCDATA)>
+<!ATTLIST name_disk
+    type CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title
+    type CDATA #IMPLIED
+    important CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT date_of_creation (#PCDATA)>
+<!ATTLIST date_of_creation
+    type CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT size (#PCDATA)>
+<!ATTLIST size
+    type CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT kolichestvo (#PCDATA)>
+<!ATTLIST kolichestvo
+    type CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT attribute (#PCDATA)>
+<!ATTLIST attribute
+    type CDATA #IMPLIED
+  >

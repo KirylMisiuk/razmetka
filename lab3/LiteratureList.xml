@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="LiteratureList.xsl"?>
+<LiteratureList>
+<book>
+    <BookTitle>Crime and Punishment</BookTitle>
+    <BookAuthor>F.M.Dostoevsky</BookAuthor>
+    <BookGenre>Philosophical novel</BookGenre>
+    <NumberOfPages>574</NumberOfPages>
+</book>
+<book>
+    <BookTitle>Dead Souls</BookTitle>
+    <BookAuthor>N.V.Gogol</BookAuthor>
+    <BookGenre>novel</BookGenre>
+    <NumberOfPages>234</NumberOfPages>
+    <Year>1999</Year>
+</book>
+<book>
+    <BookTitle>A little prince</BookTitle>
+    <BookAuthor>A. de Saint-Exupery</BookAuthor>
+    <BookGenre>fantasy</BookGenre>
+    <NumberOfPages>150</NumberOfPages>
+</book>
+<book>
+    <BookTitle>War and peace</BookTitle>
+    <BookAuthor>L.N.Tolstoy</BookAuthor>
+    <BookGenre>novel</BookGenre>
+    <NumberOfPages>1150</NumberOfPages>
+</book>
+
+</LiteratureList>

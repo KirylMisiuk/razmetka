@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema  elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="LiteratureList">
+    <xs:complexType> <!--сложный тип кторый содержит другие елементы-->
+      <xs:sequence>
+        <xs:element name="ShelfNumder" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence> <!--Элемент sequence определяет, что дочерние элементы должны появляться в последовательности. Каждый дочерний элемент может использоваться от 0 до бесконечного числа раз. -->
+              <xs:element name="BookTitle">
+                <xs:simpleType><!--Элемент simpleType определяет простой тип и определяет ограничения и информацию о значениях атрибутов или текстовых элементов.-->
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="([a-z][A-Z])+"/><!--Сопоставляется с предшествующим элементом x один или более раз-->
+
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BookAuthor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="3"/>
+                    <xs:maxLength value="20"/>
+                    <xs:pattern value="([a-z][A-Z])+"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BookGenre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+
+                    <xs:pattern value="([a-z][A-Z])+"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumberOfPages">
+                <xs:simpleType>
+                  <xs:restriction base="xs:short">
+                    <xs:pattern value="([0-9])+"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumberOfCopies">
+                <xs:simpleType>
+                  <xs:restriction base="xs:byte">
+                    <xs:pattern value="([0-9])+"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="id"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
