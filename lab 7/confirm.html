@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>welcomePage</title>
+  <script type="text/javascript" src="date.js"></script>
+</head>
+
+<body>
+  Hello
+  <script>
+    var Name = window.location.toString();
+    var SecondName = window.location.toString();
+    var calendar = window.location.toString();
+    var arr = [];
+     var mas = [];
+     var s = document.location.href;
+    mas = s.split('?');
+
+    arr = mas[1].split('&');
+
+    for (var i = 0; i < arr.length; i++) {
+
+      var res = arr[i].split('=')
+      for (var j = 0; j < res.length; j++) {
+        if (res[j] === "Name") {
+          Name = res[j + 1];
+        }
+        if (res[j] === "SecondName") {
+          SecondName = res[j + 1];
+        }
+        if (res[j] === "calendar") {
+          calendar = res[j + 1];
+    
+
+        }
+
+      }
+    }
+
+    document.write(Name);
+    document.write(" ",SecondName);
+    document.write(" ",calendar);
+
+  var time = Date.parse(calendar);
+  var date = new Date();
+
+
+  time.setFullYear(date.getFullYear());
+  var result = time.getTime() - date.getTime();
+  result = Math.round(result/86400000);
+console.log("До др осталось - "+ result + " дня(-ей)");
+document.write("До др осталось - "+ result + " дня(-ей)");
+
+
+  </script>
+</body>
+
+</html>

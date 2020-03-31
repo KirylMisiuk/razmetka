@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cinemaToHtml.xsl"?>
+<disciplinesList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="schemaXSL.xsd">
+   
+  <course id="501">
+    <name type='string'>Math</name>
+    <teacher type='string'>Vasiliy</teacher>
+    <totalLength type='integer'>200</totalLength>
+    <percentagePassed type='decimal'>58.2</percentagePassed>
+    <studentsMark>
+      <studentMark_1 type='integer'>5</studentMark_1>
+      <studentMark_2 type='integer'>2</studentMark_2>
+    </studentsMark>
+  </course>
+
+  <course id="502">
+    <name type='string'>Programming</name>
+    <teacher type='string'>Ivan</teacher>
+    <totalLength type='integer'>100</totalLength>
+    <percentagePassed type='decimal'>60.5</percentagePassed>
+    <studentsMark>
+      <studentMark_1 type='integer'>3</studentMark_1>
+      <studentMark_2 type='integer'></studentMark_2>
+    </studentsMark>
+  </course>
+
+  <course id="503">
+    <name type='string'>Philosophy</name>
+    <teacher type='string'>Evgeny</teacher>
+    <totalLength type='decimal'>190</totalLength>
+    <percentagePassed type='integer'>100</percentagePassed>
+    <studentsMark>
+      <studentMark_1 type='integer'>8</studentMark_1>
+      <studentMark_2 type='integer'>9</studentMark_2>
+    </studentsMark>
+  </course>
+
+  <course id="504">
+    <name type='string'>English</name>
+    <teacher type='string'>Maria</teacher>
+    <totalLength type='decimal'>190</totalLength>
+    <percentagePassed type='integer'>100</percentagePassed>
+    <studentsMark>
+      <studentMark_1 type='integer'>8</studentMark_1>
+      <studentMark_2 type='integer'>9</studentMark_2>
+    </studentsMark>
+  </course>
+
+  <course id="505">
+    <name type='string'>Spanish</name>
+    <teacher type='string'>Tatiana</teacher>
+    <totalLength type='decimal'>290</totalLength>
+    <percentagePassed type='integer'>100</percentagePassed>
+    <studentsMark>
+      <studentMark_1 type='integer'>8</studentMark_1>
+      <studentMark_2 type='integer'>9</studentMark_2>
+    </studentsMark>
+  </course>
+
+</disciplinesList>
+

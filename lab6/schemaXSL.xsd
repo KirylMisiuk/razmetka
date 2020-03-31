@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="disciplinesList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="course" maxOccurs="unbounded" >
+          <xs:complexType>
+            <xs:element type="xs:string" name="name"/>
+            <xs:element type="xs:string" name="teacher"/>
+            <xs:element type="xs:int" name="totalLength"/>
+            <xs:element type="xs:dec" name="percentagePassed"/>
+            <xs:sequence>
+              <xs:element type="xs:int" name="studentMark_1"/>
+              <xs:element type="xs:int" name="studentMark_2"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="id" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xsd:schema>
